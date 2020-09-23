@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginBottom="5dp"
+       android:layout_marginTop="5dp"
+       android:layout_marginEnd="5dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintBottom_toTopOf="parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="250dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="textEnd"
+        android:textSize="25sp"
+        android:id="@+id/text1"/>
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/text1"
+           android:layout_marginLeft="10dp"
+           android:text="1"
+           android:textSize="20dp"
+           android:id="@+id/Btn1"
+           android:layout_marginTop="10dp"/>
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/text1"
+           android:layout_toRightOf="@+id/Btn1"
+           android:layout_marginLeft="10dp"
+           android:text="2"
+           android:textSize="20dp"
+           android:id="@+id/Btn2"
+           android:layout_marginTop="10dp"/>
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/text1"
+           android:layout_toRightOf="@+id/Btn2"
+           android:layout_marginLeft="10dp"
+           android:text="3"
+           android:textSize="20dp"
+           android:id="@+id/Btn3"
+           android:layout_marginTop="10dp"/>
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/Btn1"
+           android:layout_marginLeft="10dp"
+           android:text="4"
+           android:textSize="20dp"
+           android:id="@+id/Btn4"
+           android:layout_marginTop="10dp"/>
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/Btn2"
+           android:layout_marginLeft="10dp"
+           android:layout_toRightOf="@id/Btn4"
+           android:text="5"
+           android:textSize="20dp"
+           android:id="@+id/Btn5"
+           android:layout_marginTop="10dp"/>
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/Btn3"
+           android:layout_marginLeft="10dp"
+           android:layout_toRightOf="@id/Btn5"
+           android:text="6"
+           android:textSize="20dp"
+           android:id="@+id/Btn6"
+           android:layout_marginTop="10dp"/>
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/Btn4"
+           android:layout_marginLeft="10dp"
+           android:text="7"
+           android:textSize="20dp"
+           android:id="@+id/Btn7"
+           android:layout_marginTop="10dp"/>
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/Btn5"
+           android:layout_marginLeft="10dp"
+           android:layout_toRightOf="@id/Btn7"
+           android:text="8"
+           android:textSize="20dp"
+           android:id="@+id/Btn8"
+           android:layout_marginTop="10dp"/>
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/Btn6"
+           android:layout_marginLeft="10dp"
+           android:layout_toRightOf="@id/Btn8"
+           android:text="9"
+           android:textSize="20dp"
+           android:id="@+id/Btn9"
+           android:layout_marginTop="10dp"/>
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/Btn8"
+           android:layout_toRightOf="@id/Btn7"
+           android:layout_marginLeft="10dp"
+           android:text="0"
+           android:textSize="20dp"
+           android:id="@+id/Btn0"
+           android:layout_marginTop="10dp"/>
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/Btnplus"
+           android:layout_below="@id/text1"
+           android:layout_toRightOf="@id/Btn3"
+           android:layout_marginLeft="10dp"
+           android:text="+"
+           android:textSize="20dp"
+           android:layout_marginTop="10dp"/>
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/Btnminus"
+          android:layout_below="@id/Btnplus"
+          android:layout_toRightOf="@id/Btn3"
+          android:layout_marginLeft="10dp"
+          android:text="-"
+          android:textSize="20dp"
+          android:layout_marginTop="10dp"/>
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/Btnmultiply"
+          android:layout_below="@id/Btnminus"
+          android:layout_toRightOf="@id/Btn3"
+          android:layout_marginLeft="10dp"
+          android:text="*"
+          android:textSize="20dp"
+          android:layout_marginTop="10dp"/>
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/Btndivide"
+          android:layout_below="@id/Btnmultiply"
+          android:layout_toRightOf="@id/Btn3"
+          android:layout_marginLeft="10dp"
+          android:text="/"
+          android:textSize="20dp"
+          android:layout_marginTop="10dp"/>
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/Btnpoint"
+          android:layout_below="@id/Btn8"
+          android:layout_toRightOf="@id/Btn0"
+          android:layout_marginLeft="10dp"
+          android:text="."
+          android:textSize="20dp"
+          android:layout_marginTop="10dp"/>
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/Btnmodulus"
+          android:layout_below="@id/Btn7"
+          android:layout_marginLeft="10dp"
+          android:text="%"
+          android:textSize="20dp"
+          android:layout_marginTop="10dp"/>
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/Btnresult"
+          android:layout_below="@id/Btndivide"
+          android:layout_toRightOf="@id/Btn3"
+          android:layout_marginLeft="10dp"
+          android:text="="
+          android:textSize="20dp"
+          android:layout_marginTop="10dp"/>
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/Btnclear"
+          android:layout_below="@id/Btnpoint"
+          android:layout_toRightOf="@id/Btn0"
+          android:layout_marginLeft="10dp"
+          android:text="clear"
+          android:textSize="20dp"
+          android:layout_marginTop="10dp"/>
+
+
+
+
+   </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
